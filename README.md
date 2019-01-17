@@ -27,11 +27,11 @@ Usage example - docker.compose:
   goreplay-to-staging:
     image: eeacms/goreplay
     network_mode: "host"
-    command: /opt/goreplay --input-raw :5678 --output-http http://staging --input-raw
+    command: /opt/goreplay --input-raw :5678 --output-http http://staging
 
   goreplay-to-development:
     image: eeacms/goreplay
     network_mode: "host"
-    command: /opt/goreplay --input-raw :5678 --output-http http://development --input-raw
+    command: /opt/goreplay --input-raw :5678 --output-http http://development
 ```
 
