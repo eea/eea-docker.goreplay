@@ -1,6 +1,6 @@
 # eea-docker.goreplay
 
-usage (snip):
+```yaml:docker-compose.yml
 
   tomcat:
     image: tomcat
@@ -21,3 +21,6 @@ usage (snip):
     image: eeacms/goreplay
     network_mode: "host"
     command: /opt/goreplay --input-raw :5678 --output-stdout --input-raw-track-response
+
+```
+
