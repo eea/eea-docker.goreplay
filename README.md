@@ -19,10 +19,19 @@ Usage example - docker.compose:
     volumes:
     - myvolume-tmp:/var/tmp
 
-  goreplay:
+  goreplay-to-stdout:
     image: eeacms/goreplay
     network_mode: "host"
     command: /opt/goreplay --input-raw :5678 --output-stdout --input-raw-track-response
 
+  goreplay-to-staging:
+    image: eeacms/goreplay
+    network_mode: "host"
+    command: /opt/goreplay --input-raw :5678 --output-http http://staging --input-raw
+
+  goreplay-to-development:
+    image: eeacms/goreplay
+    network_mode: "host"
+    command: /opt/goreplay --input-raw :5678 --output-http http://development --input-raw
 ```
 
