@@ -1,4 +1,6 @@
-# eea-docker.goreplay
+# eea.docker.goreplay
+
+Usage example - docker.compose:
 
 ```yaml:docker-compose.yml
 
