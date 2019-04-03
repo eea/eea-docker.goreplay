@@ -22,16 +22,16 @@ Usage example - docker.compose:
   goreplay-to-stdout:
     image: eeacms/goreplay
     network_mode: "host"
-    command: /opt/goreplay --input-raw :5678 --output-stdout --input-raw-track-response
+    command: /opt/gor --input-raw :5678 --output-stdout --input-raw-track-response
 
   goreplay-to-staging:
     image: eeacms/goreplay
     network_mode: "host"
-    command: /opt/goreplay --input-raw :5678 --output-http http://staging
+    command: /opt/gor --input-raw :5678 --output-http http://staging
 
   goreplay-to-development:
     image: eeacms/goreplay
     network_mode: "host"
-    command: /opt/goreplay --input-raw :5678 --output-http http://development
+    command: /opt/gor --input-raw :5678 --output-http http://development
 ```
 
